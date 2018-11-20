@@ -6,7 +6,7 @@ export default class SearchQuery extends Component {
     this.state = {
       searchTopic: ''
     }
-    
+
     this.handleChange = this.handleChange.bind(this)
   }
 
@@ -16,12 +16,13 @@ export default class SearchQuery extends Component {
 
   render() {
     const { searchTopic } = this.state
+    const { requestArticles } = this.props
     const { handleChange } = this
 
     return (
       <div>
-        <input type="text" placeholder="Topic to search" value={searchTopic} onChange={handleChange}/>
-        <button type="submit">Search!</button>
+        <input type="text" placeholder="Topic to search..." value={searchTopic} onChange={handleChange}/>
+        <button onClick={() => requestArticles(searchTopic)}>Search!</button>
       </div>
     )
   }
