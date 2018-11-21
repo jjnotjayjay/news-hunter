@@ -3,7 +3,12 @@ import Header from './header.js'
 import SearchQuery from './search-query.js'
 import ArticlesContainer from './articles-container.js'
 import { GlobalStyles } from './global-styles.js'
+import styled from 'styled-components'
 import axios from 'axios'
+
+const Wrapper = styled.div`
+  text-align: center;
+`
 
 export default class App extends Component {
   constructor(props) {
@@ -32,12 +37,12 @@ export default class App extends Component {
     const { requestArticles } = this
 
     return (
-      <div>
+      <Wrapper>
         <GlobalStyles />
         <Header />
         <SearchQuery requestArticles={requestArticles} />
         {articles.length > 0 && <ArticlesContainer articles={articles} />}
-      </div>
+      </Wrapper>
     )
   }
 }
