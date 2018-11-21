@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Header from './header.js'
 import SearchQuery from './search-query.js'
 import ArticlesContainer from './articles-container.js'
 import { GlobalStyles } from './global-styles.js'
@@ -33,6 +34,7 @@ export default class App extends Component {
     return (
       <div>
         <GlobalStyles />
+        <Header />
         <SearchQuery requestArticles={requestArticles} />
         {articles.length > 0 && <ArticlesContainer articles={articles} />}
       </div>

@@ -4,6 +4,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    font-family: 'EB Garamond', serif;
     background: url('Assets/bg.jpg');
     background-attachment: fixed;
     background-position: center;
