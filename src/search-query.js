@@ -2,31 +2,33 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  margin: 5vh 0;
+  margin: 6vh 0;
+`
+
+const inputAndButtonSharedStyles = `
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #444;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+  font-family: 'EB Garamond', serif;
 `
 
 const QueryInput = styled.input`
-  margin-right: 10px;
-  padding: 2px 5px;
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid #444;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-family: 'EB Garamond', serif;
-  transition: background 0.5s;
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  ${inputAndButtonSharedStyles}
+  transition: background 0.4s;
 
-  &:hover {
+  &:focus {
     background: rgba(255, 255, 255, 0.85)
   }
 `
 
 const SearchButton = styled.button`
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid #444;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-family: 'EB Garamond', serif;
-  transition: background 0.5s, color 0.5s;
+  padding: 0.25rem 0.5rem;
+  ${inputAndButtonSharedStyles}
+  transition: background 0.4s, color 0.4s;
 
   &:hover {
     background: black;

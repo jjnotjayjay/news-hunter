@@ -15,16 +15,17 @@ const Container = styled.div`
 const Card = styled.div`
   width: 29vw;
   margin: 0.5rem auto;
-  padding: 2vw;
+  padding: 0.75rem;
   position: relative;
   border: 1px solid black;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.6);
-  transition: background 0.2s, transform 0.2s;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 
   &:hover {
     background: rgba(255, 255, 255, 0.85);
-    transform: translateY(-0.2rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+    transform: translateY(-0.25rem);
   }
 
   @media (max-width: 700px) {
@@ -34,13 +35,13 @@ const Card = styled.div`
 
 const Date = styled.span`
   position: absolute;
-  top: 1vw;
-  right: 1vw;
-  font-size: 0.75rem;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.67rem;
 `
 
 const Headline = styled.h4`
-  margin: 1rem 0;
+  margin: 1.25rem 0 1rem 0;
 `
 
 const ArticleThumbnail = styled.img`
