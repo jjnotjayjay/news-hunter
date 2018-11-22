@@ -50,6 +50,10 @@ const Snippet = styled.p`
   text-align: left;
 `
 
+const ArticleLink = styled.a`
+  font-style: italic;
+`
+
 export default function Article(props) {
   const { article } = props
 
@@ -62,7 +66,7 @@ export default function Article(props) {
         : <ArticleThumbnail src='Assets/newspaper.png' />}
       <Snippet>
         {article.snippet + '  '}
-        <a href={article.web_url} style={{ 'font-style': 'italic' }}>Link</a>
+        <ArticleLink href={article.web_url}>Link</ArticleLink>
       </Snippet>
     </Card>
   )

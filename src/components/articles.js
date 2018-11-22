@@ -18,7 +18,7 @@ export default function Articles(props) {
 
   return (
     <Container>
-      {articles.map(article => <Article article={article} />)}
+      {articles.map((article, index) => <Article article={article} key={index} />)}
     </Container>
   )
 }
