@@ -29,7 +29,7 @@ const Logo = styled.img`
   height: 1.25rem;
 `
 
-export default function Header(props) {
+export default function Header() {
   return (
     <Wrapper>
       <Title>News Hunter</Title>

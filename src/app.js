@@ -25,11 +25,12 @@ export default class App extends Component {
       params: {
         'api-key': 'ce918b45703b49bd962eb83f2010a49e',
         q: query,
+        fq: 'headline:' + query,
         sort: 'newest'
       }
     })
-      .then(response => this.setState({ articles: response.data.response.docs }))
-      .catch(error => console.log(error))
+      .then(res => this.setState({ articles: res.data.response.docs }))
+      .catch(err => console.log(err))
     }
 
   render() {
@@ -41,7 +42,7 @@ export default class App extends Component {
         <GlobalStyles />
         <Header />
         <SearchQuery requestArticles={requestArticles} />
-        {articles.length > 0 && <ArticlesContainer articles={articles} />}
+        {!!articles.length && <ArticlesContainer articles={articles} />}
       </Wrapper>
     )
   }

@@ -71,7 +71,7 @@ export default function ArticlesContainer(props) {
           <Card>
             <Date>{article.pub_date.slice(0, 10)}</Date>
             <Headline>{article.headline.main}</Headline>
-            {article.multimedia.length > 0
+            {article.multimedia.length
               ? <ArticleThumbnail src={'https://www.nytimes.com/' + article.multimedia[0].url} />
               : <ArticleThumbnail src='Assets/newspaper.png' />}
             <Snippet>
