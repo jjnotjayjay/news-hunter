@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Header from './header.js'
-import SearchQuery from './search-query.js'
-import ArticlesContainer from './articles-container.js'
+import Header from './components/header.js'
+import SearchQuery from './components/search-query.js'
+import Articles from './components/articles.js'
 import { GlobalStyles } from './global-styles.js'
 import styled from 'styled-components'
 import axios from 'axios'
@@ -42,7 +42,7 @@ export default class App extends Component {
         <GlobalStyles />
         <Header />
         <SearchQuery requestArticles={requestArticles} />
-        {!!articles.length && <ArticlesContainer articles={articles} />}
+        {!!articles.length && <Articles articles={articles} />}
       </Wrapper>
     )
   }

@@ -61,7 +61,7 @@ const Snippet = styled.p`
   text-align: left;
 `
 
-export default function ArticlesContainer(props) {
+export default function Articles(props) {
   const { articles } = props
 
   return (
