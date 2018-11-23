@@ -1,0 +1,11 @@
+{
+  "main.js": "/news-hunter/static/js/main.7d8ed9d2.chunk.js",
+  "main.js.map": "/news-hunter/static/js/main.7d8ed9d2.chunk.js.map",
+  "static/js/1.53307dc2.chunk.js": "/news-hunter/static/js/1.53307dc2.chunk.js",
+  "static/js/1.53307dc2.chunk.js.map": "/news-hunter/static/js/1.53307dc2.chunk.js.map",
+  "runtime~main.js": "/news-hunter/static/js/runtime~main.77e0386d.js",
+  "runtime~main.js.map": "/news-hunter/static/js/runtime~main.77e0386d.js.map",
+  "index.html": "/news-hunter/index.html",
+  "precache-manifest.bda3f23e6628d64ea43bf65df665da0f.js": "/news-hunter/precache-manifest.bda3f23e6628d64ea43bf65df665da0f.js",
+  "service-worker.js": "/news-hunter/service-worker.js"
+}
