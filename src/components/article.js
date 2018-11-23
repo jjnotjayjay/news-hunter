@@ -51,8 +51,12 @@ const Snippet = styled.p`
   text-align: left;
 `
 
-const ArticleLink = styled.a`
-  font-style: italic;
+const ClickableCard = styled.span`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 `
 
 export default function Article(props) {
@@ -65,10 +69,10 @@ export default function Article(props) {
       {article.multimedia.length
         ? <ArticleThumbnail src={'https://www.nytimes.com/' + article.multimedia[0].url} />
         : <ArticleThumbnail src='Assets/newspaper.png' />}
-      <Snippet>
-        {article.snippet + '  '}
-        <ArticleLink href={article.web_url}>Link</ArticleLink>
-      </Snippet>
+      <Snippet>{article.snippet}</Snippet>
+      <a href={article.web_url}>
+        <ClickableCard></ClickableCard>
+      </a>
     </Card>
   )
 }
