@@ -58,7 +58,7 @@ export default class SearchQuery extends Component {
 
     return (
       <Wrapper>
-        <QueryInput type="text" placeholder="Topic to search..." value={searchTopic} onChange={handleChange}/>
+        <QueryInput type="text" placeholder="Topic to search..." value={searchTopic} onChange={handleChange} onKeyPress={e => {if (e.key === "Enter") requestArticles(searchTopic)}} />
         <SearchButton onClick={() => requestArticles(searchTopic)}>Hunt!</SearchButton>
       </Wrapper>
     )
