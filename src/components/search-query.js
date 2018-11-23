@@ -10,13 +10,14 @@ const inputAndButtonSharedStyles = `
   border: 1px solid #444;
   border-radius: 4px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: 'EB Garamond', serif;
 `
 
 const QueryInput = styled.input`
-  margin-right: 0.5rem;
-  padding: 0.25rem 0.75rem;
+  max-width: 225px;
+  margin-right: 0.75rem;
+  padding: 0.375rem 1.125rem;
   ${inputAndButtonSharedStyles}
   transition: background 0.4s;
 
@@ -26,7 +27,7 @@ const QueryInput = styled.input`
 `
 
 const SearchButton = styled.button`
-  padding: 0.25rem 0.5rem;
+  padding: 0.375rem 0.75rem;
   ${inputAndButtonSharedStyles}
   transition: background 0.4s, color 0.4s;
 

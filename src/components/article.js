@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 const Card = styled.div`
   width: 29vw;
-  margin: 0.5rem auto;
-  padding: 0.75rem;
+  margin: 0.75rem auto;
+  padding: 1.125rem;
   position: relative;
   border: 1px solid black;
   background: rgba(255, 255, 255, 0.7);
@@ -14,7 +14,7 @@ const Card = styled.div`
   &:hover {
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
-    transform: translateY(-0.25rem);
+    transform: translateY(-0.375rem);
   }
 
   @media (max-width: 700px) {
@@ -24,13 +24,14 @@ const Card = styled.div`
 
 const Date = styled.span`
   position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  font-size: 0.67rem;
+  top: 1.125rem;
+  right: 1.125rem;
+  font-size: 1rem;
 `
 
 const Headline = styled.h4`
-  margin: 1.25rem 0 1rem 0;
+  margin: 1.875rem 0 1.5rem 0;
+  font-size: 1.375rem;
 `
 
 const ArticleThumbnail = styled.img`
@@ -46,7 +47,7 @@ const ArticleThumbnail = styled.img`
 `
 
 const Snippet = styled.p`
-  font-size: 0.75rem;
+  font-size: 1.125rem;
   text-align: left;
 `
 
