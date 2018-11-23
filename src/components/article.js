@@ -9,11 +9,14 @@ const Card = styled.div`
   border: 1px solid black;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s, box-shadow 0.2s, -webkit-transform 0.2s;
   transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s, -webkit-transform 0.2s;
 
   &:hover {
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+    -webkit-transform: translateY(-0.375rem);
     transform: translateY(-0.375rem);
   }
 
