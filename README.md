@@ -17,6 +17,7 @@ Responsive web app that searches the NYT for articles pertaining to a specified 
 * Styled Components
 * New York Times API
 * Create React App
+* BrowserStack (Cross Browser Testing)
 
 ### Installation
 * `cd news-hunter`
