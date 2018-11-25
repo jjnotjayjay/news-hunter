@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h2`
   margin-bottom: 1vh;
-  font-size: 2.5rem;
+  font-size: 3.75rem;
   text-transform: uppercase;
   text-shadow: 3px 2px 15px #999;
 
@@ -18,15 +18,15 @@ const Title = styled.h2`
 
 const Subtitle = styled.span`
   margin: 0.5rem;
-  line-height: 1.25rem;
+  line-height: 1.875rem;
   vertical-align: top;
-  font-size: 0.67rem;
+  font-size: 1rem;
   font-style: italic;
   color: #444;
 `
 
 const Logo = styled.img`
-  height: 1.25rem;
+  height: 1.875rem;
 `
 
 export default function Header() {
